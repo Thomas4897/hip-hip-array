@@ -3,7 +3,6 @@
 //? ANY time you're asked to print something from the  array, do it with a loop, printing each item you're asked to print INDIVIDUALLY.
 
 //! Challenge 1
-
 //! Loop through the following array, console.logging out each value.
 console.log("Challenge 1");
 const students = [
@@ -23,7 +22,8 @@ const students = [
 ];
 
 for (let i = 0; i < students.length; i++) {
-	console.log(students[i]);
+	const value = students[i];
+	console.log(value);
 }
 
 //! Challenge 2
@@ -75,6 +75,10 @@ for (let i = 0; i < fibonacciNumbers.length; i++) {
 	console.log(fibonacciNumbers[i]);
 }
 
+//? for (const number of fibonacciNumbers){
+//? 	console.log(number);
+//? }
+
 //! Challenge 7
 //! Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 console.log("\nChallenge 7");
@@ -103,7 +107,7 @@ for (let i = 0; i < num.length; i++) {
 //! Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 console.log("\nChallenge 9");
 
-for (let i = 2; i <= 10; i++) {
+for (let i = 3; i <= 10; i++) {
 	console.log(students[i]);
 }
 
@@ -112,9 +116,9 @@ for (let i = 2; i <= 10; i++) {
 console.log("\nChallenge 10");
 const students2 = [];
 
-for (let i = 2; i <= 9; i++) {
+for (let i = 3; i <= 10; i++) {
 	students2.push(students[i]);
-	let i2 = i - 2;
+	let i2 = i - 3;
 	console.log(students2[i2]);
 }
 
@@ -122,7 +126,7 @@ for (let i = 2; i <= 9; i++) {
 //! Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
 console.log("\nChallenge 11");
 
-let students3 = students.slice(2, 10);
+let students3 = students.slice(3, 11);
 
 for (let i = 0; i < students3.length; i++) {
 	console.log(students3[i]);
@@ -147,7 +151,7 @@ const dinosaurs = [
 	"Gigantosaur",
 ];
 
-console.log(dinosaurs.splice(3, 3));
+console.log(dinosaurs.splice(4, 3));
 
 console.log("\nOriginal Dinosaur Array");
 for (let i = 0; i < dinosaurs.length; i++) {
